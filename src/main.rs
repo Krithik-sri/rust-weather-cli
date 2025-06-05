@@ -112,7 +112,7 @@ fn get_temp_emoji(temperature: f64) -> &'static str{
             let country_code = country_code.trim();
             
 
-            let api_key = "830fc5004f10529d374d152feceec4e9";
+            let api_key = ""; //Add your api_key here
 
             match get_weather_info(&city, &country_code, &api_key) {
                 Ok(response) => {
